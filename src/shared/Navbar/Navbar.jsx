@@ -5,12 +5,12 @@ import logo from '../../assets/logo.png'
 
 const Navbar = () => {
 
-    const [open, setOpen] = useState(false); // mobile menu state
+    const [open, setOpen] = useState(false); 
 
     return (
         <header>
             <div className="w-full bg-[#49BBBD]">
-                <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+                <div className="container mx-auto px-4 lg:px-10 py-2 flex items-center justify-between">
 
                     {/* Logo */}
                     <img className='w-20' src={logo} alt="logo" />

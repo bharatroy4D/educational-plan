@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <section>
             {/* Parent Container */}
-            <div className="container bg-[#49BBBD] mx-auto flex flex-col md:flex-row items-center gap-10 px-10 relative">
+            <div className="container bg-[#49BBBD] mx-auto flex flex-col-reverse md:flex-row items-center gap-10 px-4 lg:px-10 relative">
 
                 {/* Banner Content */}
                 <div className="w-full md:w-2/5 flex flex-col justify-center gap-4 z-10">
@@ -17,34 +17,34 @@ const Banner = () => {
                         TOTC is an interesting platform that will teach you in a more interactive way
                     </p>
 
-                    <div className="flex flex-wrap items-center gap-5 mt-6">
+                    <div className="flex flex-wrap items-center gap-5  pb-10 lg:p-0">
                         <button className="bg-gray-400 hover:bg-gray-500 transition rounded-full text-lg font-semibold px-6 py-2">
                             Join for Free
                         </button>
                         <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md">
                             ▶
                         </div>
-                        <p className="text-gray-700 text-lg">Watch how it works</p>
+                        <p className="text-gray-700 text-lg hidden lg:block">Watch how it works</p>
                     </div>
                 </div>
 
                 {/* Banner Image with Floating Cards */}
-                <div className="w-[60%] md:w-3/5 relative flex justify-center">
-                    <img src={girl} alt="girl" className="w-[400px] relative z-10" />
+                <div className="w-full lg:w-[60%] relative flex justify-center">
+                    <img src={girl} alt="girl" className=" w-full lg:w-[400px] relative z-10" />
 
                     {/* Floating Card - Top Left */}
-                    <div className="absolute top-40 left-10 bg-white px-5 py-3 rounded-xl shadow-lg flex items-center gap-3">
-                        <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                    <div className="absolute top-40 left-10 md:bg-white px-5 py-3 rounded-xl md:shadow-lg flex items-center gap-3">
+                        <div className="hidden  w-10 h-10 bg-blue-100 rounded-full lg:inline-flex items-center justify-center">
                             📅
                         </div>
-                        <div>
+                        <div className="hidden lg:block">
                             <h3 className="font-bold text-gray-900">250k</h3>
                             <p className="text-gray-600 text-sm">Assisted Student</p>
                         </div>
                     </div>
 
                     {/* Floating Card - Middle Right */}
-                    <div className="absolute z-20 top-1/2 right-20 bg-white px-5 py-3 rounded-xl shadow-lg flex items-center gap-3">
+                    <div className="absolute z-20 lg:top-1/2 bottom-40 right-25 lg:right-20 bg-white px-5 py-3 rounded-xl shadow-lg flex items-center gap-3">
                         <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
                             ✉️
                         </div>
@@ -55,7 +55,7 @@ const Banner = () => {
                     </div>
 
                     {/* Floating Card - Bottom Left */}
-                    <div className="absolute z-20 bottom-10 left-10 bg-white px-5 py-3 rounded-xl shadow-lg flex items-center gap-3">
+                    <div className="absolute z-20 bottom-0 lg:bottom-10 left-10 bg-white px-5 py-3 rounded-xl shadow-lg flex items-center gap-3">
 
                         <div className="flex flex-col items-center">
                             <div className="flex items-center gap-4">
