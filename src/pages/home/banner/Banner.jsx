@@ -3,9 +3,9 @@ import girl from "../../../assets/lovely-teenage-girl.png";
 
 const Banner = () => {
     return (
-        <section className="w-full h-screen bg-[#49BBBD] flex items-center justify-between px-10 relative overflow-hidden">
+        <section>
             {/* Parent Container */}
-            <div className="container mx-auto flex flex-col md:flex-row items-center gap-10 relative">
+            <div className="container bg-[#49BBBD] mx-auto flex flex-col md:flex-row items-center gap-10 px-10 relative">
 
                 {/* Banner Content */}
                 <div className="w-full md:w-2/5 flex flex-col justify-center gap-4 z-10">
@@ -24,7 +24,7 @@ const Banner = () => {
                         <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md">
                             ▶
                         </div>
-                        <p className="text-white text-lg">Watch how it works</p>
+                        <p className="text-gray-700 text-lg">Watch how it works</p>
                     </div>
                 </div>
 
