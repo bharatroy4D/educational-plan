@@ -1,6 +1,8 @@
 import Root from "../layout/Root";
-import Abouts from "../pages/abouts/Abouts";
-import Contacts from "../pages/contacts/Contacts";
+import About from "../pages/about/About";
+import Blog from "../pages/Blog/Blog";
+import Careers from "../pages/careers/Careers";
+import Courses from "../pages/courses/Courses";
 import Home from "../pages/home/Home";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
@@ -17,12 +19,20 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: "abouts",  // 👉 /about
-                element: <Abouts />
+                path: "about",  // 👉 /about
+                element: <About />
             },
             {
-                path: "contacts", // 👉 /contact
-                element: <Contacts />
+                path: "courses", // 👉 /contact
+                element: <Courses />
+            },
+            {
+                path: "careers", // 👉 /contact
+                element: <Careers />
+            },
+            {
+                path: "blog", // 👉 /contact
+                element: <Blog />
             },
             {
                 path: "login",   // 👉 /login
