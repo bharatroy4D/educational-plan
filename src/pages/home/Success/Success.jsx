@@ -3,6 +3,7 @@ import card1 from '../../../assets/Group 79.png';
 import card2 from '../../../assets/Group 80.png';
 import card3 from '../../../assets/Group 81.png';
 import instractor from '../../../assets/images.jfif';
+import teaching from '../../../assets/education.png'
 import students from '../../../assets/Black-College-Students-2014.jpg'
 
 const Success = () => {
@@ -105,12 +106,11 @@ const Success = () => {
             </div>
             {/* WHAT IS TOTC SECTION */}
             <div className="max-w-5xl mx-auto px-4 lg:px-10 py-10 
-                grid grid-cols-1 md:grid-cols-2 gap-6">
-
+                grid grid-cols-1 md:grid-cols-2 gap-10">
                 {/* Card 1 */}
-                <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
+                <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
                     <img
-                        className="w-full h-72 object-cover"
+                        className="w-full h-64 object-cover"
                         src={instractor}
                         alt="Instructor"
                     />
@@ -131,11 +131,10 @@ const Success = () => {
                         </button>
                     </div>
                 </div>
-
                 {/* Card 2 */}
-                <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
+                <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
                     <img
-                        className="w-full h-72 object-cover"
+                        className="w-full h-64 object-cover"
                         src={students}
                         alt="Instructor"
                     />
@@ -156,11 +155,24 @@ const Success = () => {
                         </button>
                     </div>
                 </div>
-
             </div>
+            {/* text context */}
+            <div className='flex flex-col lg:flex-row gap-15 max-w-6xl px-4 py-5 lg:py-15 lg:px-10 mx-auto'>
+                <div className='relative w-[50%] font-sans'>
+                    <h1 className='text-2xl font-semibold '>Everything you can do in a physical classroom, <span className='text-gray-400'>you can do with TOTC</span></h1>
 
+                    <p className='py-4 '>TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system. payments and virtual classrooms all in one secure cloud-based system.</p>
 
+                    <button className='py-4 underline'>Learn more</button>
 
+                    <div className='absolute top-1 -left-3 -z-10 bg-green-400 w-7 h-7 rounded-full'></div>
+                </div>
+                <div className='relative w-[50%]  '>
+                    <img className='absolute w-full rounded-lg h-60 object-cover z-20' src={teaching} alt="" />
+                    <div className='absolute -top-2 -left-2 z-10 bg-blue-400 w-14 h-14 rounded-lg'></div>
+                    <div className='absolute bottom-0 -right-2 z-10 bg-green-400 w-20 h-20 rounded-lg'></div>
+                </div>
+            </div>
         </section>
     );
 };
