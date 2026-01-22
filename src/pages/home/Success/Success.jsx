@@ -1,4 +1,7 @@
 import React from 'react';
+import card1 from '../../../assets/Group 79.png';
+import card2 from '../../../assets/Group 80.png';
+import card3 from '../../../assets/Group 81.png';
 
 const Success = () => {
 
@@ -16,7 +19,7 @@ const Success = () => {
             <div className="container flex flex-col justify-center items-center font-sans px-4 lg:px-10 mx-auto">
                 <h1 className="text-3xl font-bold text-center mb-4">Our Success</h1>
 
-                <p className="max-w-3xl text-center font-semibold text-gray-600">
+                <p className="max-w-3xl text-center  text-gray-600">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eos quasi,
                     consectetur quam aspernatur nostrum accusamus corrupti deleniti. Ea possimus
                     earum ipsum doloribus? Vel culpa placeat repellendus odit fuga. Autem!
@@ -36,6 +39,57 @@ const Success = () => {
                     </div>
                 ))}
             </div>
+            {/* Text Section */}
+            <div className="container flex flex-col justify-center items-center font-sans px-4 lg:px-10 mx-auto">
+                <h1 className="text-3xl font-bold text-center mt-16 mb-4"><span className='text-blue-700'>All-in-One</span><span className='text-gray-400'>Cloud Software</span></h1>
+
+                <p className="max-w-3xl text-center  text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eos quasi,
+                    consectetur quam aspernatur nostrum accusamus corrupti deleniti. Ea possimus
+                    earum ipsum doloribus? Vel culpa placeat repellendus odit fuga. Autem!
+                </p>
+            </div>
+            {/* Card Feature Section */}
+            <div className="container mx-auto px-5 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                {/* Card 1 */}
+                <div className="bg-white shadow-md rounded-2xl p-7 text-center hover:shadow-xl transition-all duration-300">
+                    <img src={card1} alt="Billing Icon" className="mx-auto mb-5 w-20 h-20" />
+                    <h1 className="text-xl font-semibold mb-3 text-gray-800">
+                        Online Billing, Invoicing, & Contracts
+                    </h1>
+                    <p className="text-gray-600">
+                        Simple and secure control of your organization’s financial and legal
+                        transactions. Send customized invoices and contracts.
+                    </p>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white shadow-md rounded-2xl p-7 text-center hover:shadow-xl transition-all duration-300">
+                    <img src={card2} alt="Scheduling Icon" className="mx-auto mb-5 w-20 h-20" />
+                    <h1 className="text-xl font-semibold mb-3 text-gray-800">
+                        Easy Scheduling & Attendance Tracking
+                    </h1>
+                    <p className="text-gray-600">
+                        Schedule and reserve classrooms at one campus or multiple campuses.
+                        Keep detailed records of student attendance.
+                    </p>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white shadow-md rounded-2xl p-7 text-center hover:shadow-xl transition-all duration-300">
+                    <img src={card3} alt="Customer Tracking Icon" className="mx-auto mb-5 w-20 h-20" />
+                    <h1 className="text-xl font-semibold mb-3 text-gray-800">
+                        Customer Tracking
+                    </h1>
+                    <p className="text-gray-600">
+                        Automate and track emails to individuals or groups. Skilline’s built-in
+                        system helps organize your organization.
+                    </p>
+                </div>
+
+            </div>
+
         </section>
     );
 };
